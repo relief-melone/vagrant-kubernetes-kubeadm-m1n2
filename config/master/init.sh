@@ -16,5 +16,5 @@ kubeadm token create --print-join-command >> /tmp/kubeadm/join.sh
 chmod +x /tmp/kubeadm/join.sh
 
 # Create the pod network
-kubectl appliy -n kube-system -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base 64 | tr -d '\n')"
+kubectl apply -n kube-system -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base 64 | tr -d '\n')"
 
